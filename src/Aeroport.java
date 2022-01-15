@@ -16,6 +16,7 @@ public class Aeroport {
         this.longitude = longitude;
     }
 
+    Aeroport() {}
     public String getIATA()
     {
         return IATA;
