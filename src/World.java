@@ -43,7 +43,7 @@ public class World {
         }
     }
 
-    protected double distance(double latitude, double longitude, Aeroport ap)
+    protected double distance(double longitude, double latitude, Aeroport ap)
     {
         double apLat = ap.getLatitude();
         double apLong = ap.getLongitude();
@@ -52,7 +52,7 @@ public class World {
 
     }
 
-    public Aeroport findNearestAirport(double latitude, double longitude)
+    public Aeroport findNearestAirport(double longitude, double latitude)
     {
         int idx_min = 0;
         double distance_min = distance(latitude,longitude,list.get(0));

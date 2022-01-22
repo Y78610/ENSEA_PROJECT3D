@@ -1,0 +1,8 @@
+# ignore out folder
+/out
+
+# ignore idea folder
+/.idea
+
+# ignore iml file
+ENSEA_PROJECT3D.iml
