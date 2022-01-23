@@ -3,9 +3,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.lang.Math;
-import java.util.HashMap;
-import java.util.ListIterator;
-import java.util.Map;
 
 public class World {
 
@@ -47,8 +44,8 @@ public class World {
     {
         double apLat = ap.getLatitude();
         double apLong = ap.getLongitude();
-        return Math.pow((apLat - latitude),2) +
-                Math.pow(((apLong - longitude) * Math.cos((apLat + latitude)/2)),2);
+        return Math.sqrt(Math.pow((apLat - latitude),2) +
+                Math.pow(((apLong - longitude) * Math.cos((apLat + latitude)/2)),2)) * 300;
 
     }
 
